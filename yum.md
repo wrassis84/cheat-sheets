@@ -62,14 +62,13 @@
 | **`yum-complete-transaction`** | Try to complete yum transactions that didn’t finish |
 | **`yumdb`** | Check or change the yum database |
 | **`yumdownloader`** | Download a package from a repo to current directory |
-| **`-y`** |  | Assume yes if prompted |
-| **`--assumeno`** |  | Assume no if prompted |
-| **`-q`** |  | Produce no output |
-| **`-v`** |  | Produce extra debugging output |
-| **`--noplugins`** |  | Run command without loading any yum plugins |
-| **`--disableplugin=`** |  | Disable a particular plugin for single command **`yum --disableplugin=langpacks info vsftpd** |
-| **`--enableplugin=`** |  | Enable a plugin that is installed, but currently disabled **`yum --enableplugin=ps ps ** |
-Show packages tied to running processes
+| **`-y`** | | Assume yes if prompted |
+| **`--assumeno`** | | Assume no if prompted |
+| **`-q`** | | Produce no output |
+| **`-v`** | | Produce extra debugging output |
+| **`--noplugins`** | | Run command without loading any yum plugins |
+| **`--disableplugin=`** | | Disable a particular plugin for single command: **`yum --disableplugin=langpacks info vsftpd`** |
+| **`--enableplugin=`** | | Enable a plugin that is installed, but currently disabled: **`yum --enableplugin=ps ps`** - Show packages tied to running processes |
 
 | **`--enablerepo= Enable currently disabled repo for a single 
 command (wildcards okay)
