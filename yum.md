@@ -1,6 +1,6 @@
 |   |   |
 |---|---|
-| **`yum help`** | Show `yum` subcommands and options |
+| **`yum help`** | Show **`yum`** subcommands and options |
 | **`yum list available`** | List all available packages |
 | **`yum list installed`** | List all installed packages  |
 | **`yum list all`** | List installed and available packages  |
