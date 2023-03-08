@@ -50,7 +50,7 @@
 | **`yum langinstall es`** | Install packages associated with Spanish language|
 | **`yum langlist`** | List languages that are installed |
 | **`yum langremove es`** | Remove packages associated with Spanish language |
-|**install the yum-utils package**|
+| **install the yum-utils package** |
 | **`yum find-repos-of-install`** | Find which repository a package comes from |
 | **`yum needs-restarting`** | Find processes that have been updated and need to restart |
 | **`yum repoclosure`** | Get unmet dependency list from repositories |
@@ -69,22 +69,8 @@
 | **`--noplugins`** | Run command without loading any yum plugins |
 | **`--disableplugin=`** | Disable a particular plugin for single command: **`yum --disableplugin=langpacks info vsftpd`** |
 | **`--enableplugin=`** | Enable a plugin that is installed, but currently disabled: **`yum --enableplugin=ps ps`** - Show packages tied to running processes |
-
-| **`--enablerepo= Enable currently disabled repo for a single 
-command (wildcards okay)
-yum install docker \
- --enablerepo=rhel-7-server-extras-rpm
-
-| **`--disablerepo= Disable currently enabled repo for a single 
-command (wildcards okay)
-yum list available --disablerepo=epel
-
-| **`--downloadonly Download to /var/cache/yum/arch/prod/repo/
-packages/, but don’t install
-yum install --downloadonly vsftpd
-Download vsftpd package to cache
-
-| **`--filter-???= Replace ??? with vendors, rpm-groups, arches, 
-and others to filter output
-
-| **`--changelog Display changelog information of package
+| **`--enablerepo=`** | Enable currently disabled repo for a single command (wildcards okay): **`yum install docker --enablerepo=rhel-7-server-extras-rpm`** |
+| **`--disablerepo=`** | Disable currently enabled repo for a single command (wildcards okay): **`yum list available --disablerepo=epel`** |
+| **`--downloadonly`** | Download to **`/var/cache/yum/arch/prod/repo/packages/`**, but don’t install: **`yum install --downloadonly vsftpd`** |
+| **`--filter-???=`** | Replace ??? with vendors, rpm-groups, arches, and others to filter output |
+| **`--changelog`** | Display changelog information of package |
