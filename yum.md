@@ -74,3 +74,4 @@
 | **`--downloadonly`** | Download to **`/var/cache/yum/arch/prod/repo/packages/`**, but don’t install: **`yum install --downloadonly vsftpd`** |
 | **`--filter-???=`** | Replace ??? with vendors, rpm-groups, arches, and others to filter output |
 | **`--changelog`** | Display changelog information of package |
+| Adapted from: [YUM COMMAND CHEAT SHEET for Red Hat Enterprise Linux](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf). |
