@@ -1,3 +1,5 @@
+O `systemctl` é a ferramenta de gerenciamento central para controlar o sistema `init` (`systemd`). Com ele podemos gerenciar serviços, verificar status, alterar estados de sistema e trabalhar com os arquivos de configuração.
+
 **```systemctl --version```** - Exibe a versão instalada do `systemd`.
 
 **```systemctl -p UnitPath show```** - Exibe os diretórios onde o `systemd` busca as configurações, observando a precedência.
