@@ -16,6 +16,14 @@ O `systemctl` é a ferramenta de gerenciamento central para controlar o sistema 
 
 **```systemctl reload-or-restart <application>.service```** - Recarrega os arquivos de configuração ou reinicia o serviço, se a aplicação tiver essa necessidade.
 
+**```systemctl reset-failed```** - Reseta todas as unidades do estado de falha.
+
+**```systemctl -H <host> status network```** - Executa comandos `systemctl` remotamente.
+
+**```systemctl condrestart <service>```** - Reinicia um serviço se este já estiver em execução.
+
+**```systemctl list-dependencies graphical.target```** - Exibe uma tabela de serviços que serão iniciados quando o sistema inicializar com interface gráfica.
+
 **```systemctl try-restart <application>.service```** - Para reiniciar uma aplicação que esteja em execução. Caso contrário, não faz nada.
 
 **```systemctl enable <application>.service```** - Para sempre iniciar um serviço na inicialização do sistema. Isso criará um link simbólico a partir da cópia do arquivo de serviço do sistema (geralmente em `/lib/systemd/system` ou `/etc/systemd/system`) para a localização em disco onde o `systemd` procura por arquivos de inicialização automática (geralmente `etc/systemd/system/<some_target>.target.wants`)
