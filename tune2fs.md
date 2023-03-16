@@ -32,4 +32,5 @@ Também podemos converter um _sistema de arquivos_ **EXT2** para **EXT3**, bem c
 **```sudo tune2fs -O extents,uninit_bg,dir_index /dev/sda5```** - Adiciona as configurações indicadas (extents,uninit_bg,dir_index) a um _sistema de arquivos_ do tipo **EXT3**, convertendo-o para o tipo **EXT4**. Importante fazer o _backup_ dos dados para evitar perdas e corrupção de dados.
 
 **```sudo tune2fs -O ^extents,^uninit_bg,^dir_index /dev/sda5```** - Remove as configurações indicadas (extents,uninit_bg,dir_index) de um _sistema de arquivos_. Importante fazer o _backup_ dos dados para evitar perdas e corrupção de dados.
+
 Adaptado de: [15 tune2fs command examples in Linux [Cheat Sheet]](https://www.golinuxcloud.com/tune2fs-command-in-linux/).
